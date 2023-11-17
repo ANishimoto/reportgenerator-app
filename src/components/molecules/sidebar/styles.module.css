@@ -1,0 +1,10 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* ou a largura desejada */
+    background-color: #333; /* cor de fundo desejada */
+    color: #fff; /* cor do texto desejada */
+    overflow-y: auto; /* permite rolagem na barra lateral */
+  }
