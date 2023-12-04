@@ -77,7 +77,7 @@ function GenerateReportForm() {
                 response = await GenerateFileService.generateCsvFile(payload, options);
                 extension = '.csv';
                 break;
-            case 'TEXT':
+            case 'TXT':
                 response = await GenerateFileService.generateTextFile(payload, options);
                 extension = '.txt';
                 break;
