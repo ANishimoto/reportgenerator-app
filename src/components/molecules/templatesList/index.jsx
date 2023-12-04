@@ -22,8 +22,27 @@ function TemplatesList(props) {
         window.location.href = `/template/update/${id}`;
     }
 
+    const handleDeleteClick = (id) => {
+        //TODO
+    }
+
+    const handleNewClick = () => {
+        window.location.href = `/template/create`;
+    }
+
     return (
         <div className="container mx-auto mt-8">
+            <div className='min-w-full'>
+                <button className="float-right p-2"
+                    onClick={() => handleNewClick()}
+                >
+                    <img
+                        src="/add-icon.png"
+                        alt="Ícone de lápis"
+                        className="w-10 h-10"
+                    />
+                </button>
+            </div>
             <table className="min-w-full">
                 <thead>
                 <tr>
@@ -49,7 +68,7 @@ function TemplatesList(props) {
                                         />
                                     </button>
                                     {/* <button className="p-1"
-                                        onClick={() => handleEditClick(item.id)}
+                                        onClick={() => handleDeleteClick(item.id)}
                                     >
                                         <img
                                             src="/garbage-svgrepo-com.png"
